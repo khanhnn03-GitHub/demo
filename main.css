@@ -1,7 +1,9 @@
 body {
     margin: 0 auto;
+    width: 1440px;
     overflow: auto;
     font-family: 'Inter', sans-serif;
+
 }
 
 .header-top {
@@ -116,19 +118,15 @@ body {
     width: 149px;
     height: 44px;
     align-items: center;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .search-button-text {
     font-size: 18px;
     width: 81px;
     height: 28px;
-    display: flex;
     margin: 8px 34px;
     font-weight: 500;
-    align-items: center;
-    border-radius: 4px;
-
 }
 
 .title-ava {
@@ -171,13 +169,8 @@ body {
     background-color: #e1e0e0;
 }
 
-.content {
-    max-height: 1902px;
-    width: 1440px;
-}
 
 .content-top {
-    height: 639px;
     width: 1160px;
     margin-left: 140px;
 }
@@ -216,27 +209,18 @@ body {
 }
 
 .container-content-cards {
-    height: 532px;
-    max-width: 1160px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 107px;
-    align-items: stretch;
-
 }
 
 .content-cards {
-    height: 156px;
     width: calc((100% / 3) - 64px);
     border-radius: 16px;
     margin-right: 32px;
     margin-bottom: 32px;
-    display: flex;
-    flex-wrap: wrap;
     padding: 16px;
     border: 1px solid #021A84;
-    /*margin-left: 15px;*/
-
 }
 
 .content-cards:nth-child(3n + 3) {
@@ -246,7 +230,6 @@ body {
 .content-cards-top {
     height: 32px;
     width: 100%;
-
     justify-content: space-between;
     display: flex;
 }
@@ -258,6 +241,7 @@ body {
 }
 
 .title-content-cards {
+
     font-weight: 500;
     font-size: 16px;
     color: black;
@@ -280,6 +264,7 @@ body {
 }
 
 .content-cards-mid {
+    border-top: 1px solid #E5E5E5;
     height: 44px;
     width: 333px;
     margin-top: 8px;
@@ -362,17 +347,12 @@ body {
 }
 
 .content-mid {
-    height: 394px;
-    width: 1160px;
     margin-left: 140px;
-    margin-top: 719px;
-
+    width: 1160px;
 }
 
 .content-mid-choose {
-    height: 76px;
-    width: 449px;
-    margin-left: 355px;
+   text-align: center;
 
 }
 
@@ -380,27 +360,17 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: #021A84;
-    margin-left: 201px;
-
 }
 
 .tai-sao-lua-chon {
-    height: 48px;
-    width: 449px;
     font-weight: 700;
     font-size: 34px;
-    /*margin-top: 28px;*/
-    margin: unset;
-    text-align: center;
-
 }
 
 .content-mid-cards {
-    height: 278px;
     width: 1160px;
     display: flex;
     margin-top: 116px;
-
 }
 
 .content-mid-cards-card {
@@ -411,7 +381,6 @@ body {
     padding: 32px;
     text-align: center;
     background-color: #73de97;
-
 }
 
 .icon-search-job {
@@ -435,12 +404,6 @@ body {
 
 }
 
-.content-partner {
-    height: 275px;
-    width: 1440px;
-    margin-top: 280px;
-
-}
 
 .text-doi-tac {
     font-weight: 700;
@@ -462,20 +425,20 @@ body {
     overflow: hidden;
     object-fit: cover;
     border-radius: 8px;
-    padding: 8px;
-    margin-left: 30px;
+    margin-right: 76px;
+}
+.card-content-partner:nth-child(n + 5){
+    margin-right: 0;
 }
 
 .list-cards-content-partner {
     display: flex;
-    height: 156px;
     width: 1020px;
-
 }
 
 .icon-ellipse-list-cards-content-partner {
+    margin-top: 24px;
     text-align: center;
-
 }
 
 .content-bottom {
@@ -516,31 +479,35 @@ body {
 }
 
 .cards-content-bottom {
-    height: 218px;
-    width: 297px;
+    width: calc(100% / 3) ;
     text-align: center;
-
 }
 
 .number {
-    margin-left: 144px;
+    height: 24px;
+    width: 24px;
+    margin-left: 170px;
+    padding: 4px;
+    border-radius: 30px;
+    background-color: #999999;
+    color: white;
 }
 
-.cards-content-bottom2 {
-    margin-left: 101px;
-}
 
 .icon-add {
     height: 98px;
     width: 101px;
 }
-
-.footer {
-    margin-top: 1187px;
+.footer{
+    margin-top: 150px;
+    width: 1440px;
+    height: 588px;
 }
-
 .footer-top {
     display: flex;
+    position: absolute;
+    top:2957px;
+    bottom: 0;
 }
 
 .title-footer-top {
@@ -549,7 +516,7 @@ body {
     margin-left: 139px;
     border-radius: 20px;
     display: flex;
-    background-color: #0CC64B;
+    background-color: #26AB5B;
 }
 
 .title-footer-top ion-icon {
@@ -568,9 +535,16 @@ body {
 }
 
 .button-footer-top {
-    height: 119px;
-    width: 233px;
+    position: absolute;
+    left: 1066px;
+    right: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 115px;
+    width: 153px;
     padding: 2px 40px 2px 40px;
+    background-color: #5bdc86;
+
 }
 
 .dang-ki {
@@ -578,13 +552,125 @@ body {
     border-radius: 8px;
     font-weight: 500;
     font-size: 18px;
+    margin-top: 26px;
     text-align: center;
     background-color: #021A84;
     color: white;
+}
+
+.footer-mid{
+    display: flex;
+    margin-top: 40px;
+    width: 1160px;
+    margin-left: 140px;
+    justify-content: space-between;
 
 }
 
-.a {
-    color: green;
-    background: red;
+.container-email-address{
+    padding: 8px 8px 8px 16px;
+    border-radius: 8px ;
+    background-color: #f8f2f2;
+    width: 228px;
+    height: 34px;
+}
+.container-email-address span{
+    font-weight: 400;
+    font-size: 14px;
+    color: #999999;
+}
+.email-address-and-icon{
+    display: flex;
+}
+.email-address-and-icon ion-icon{
+    width: 18px;
+    height: 18px;
+    margin-left: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    color: white;
+    background-color: #fc9139;
+}
+.cong-viec-cty{
+    width: 264px;
+    display: flex;
+    justify-content: space-between;
+}
+.cong-viec{
+    display: flex;
+}
+.cty{
+    display: flex;
+}
+
+.cong-viec-cong-ty span1{
+    font-weight: 700;
+    font-size: 14px;
+}
+.cong-viec-cong-ty span{
+    font-weight: 400;
+    font-size: 14px;
+    color: #999999;
+    margin-left: 15px;
+}
+.footer-bottom{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 140px;
+    width: 1160px;
+    border-bottom: #E5E5E5 solid 1px;
+}
+
+.img-footer{
+    width: 190px;
+    height: 40px;
+    border-bottom: #E5E5E5 solid 1px;
+}
+.img-logo-footer{
+    height: 88px;
+    width: 190px;
+
+}
+.img-logo-footer ion-icon{
+    color: #999999;
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+
+}
+.img-logo-footer ion-icon:last-child{
+    margin-right: 0;
+}
+.dia-chi{
+    width: 242px;
+    margin-left: 51px;
+}
+
+.text-footer{
+    font-weight: 700;
+    font-size: 18px;
+    color: #021A84;
+
+}
+.text-footer1{
+    line-height: 28px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 18px;
+}
+.lien-he{
+    margin-left: 51px;
+}
+
+.menu{
+    margin-left: 51px;
+}
+.tai-khoan-cua-toi{
+    margin-left: 51px;
+}
+.Copyright{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #999999;
 }
